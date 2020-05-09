@@ -52,8 +52,8 @@ def my_scatter(x,y,clr,ttl):
 # Dirichlet boundary conditions
 uL = 0.5
 uR = 1.2
-uT = -.75
-uB = -1
+uT = 1.5
+uB = 0
 
 
 
