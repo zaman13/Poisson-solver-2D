@@ -11,6 +11,8 @@
 <p>
 Finite difference solution of 2D Poisson equation <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = g(x,y)">
 
+<img align = "right" src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output_2.png"  width = "440">
+
 Current version can handle Dirichlet boundary conditions:
 
 <img src="https://render.githubusercontent.com/render/math?math=u(x=x_L,y) = u_L">  (left boundary value)
