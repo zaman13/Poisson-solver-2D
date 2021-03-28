@@ -29,7 +29,7 @@ The boundary values themselves can be functions of (x,y).
 
 ### Package requirements
   - NumPy 
-  - SciPy (sparse matrices, sparse linear algebra) <a href = "https://docs.scipy.org/doc/scipy/reference/sparse.html"> <img src="https://img.shields.io/badge/Pkg-sparse-yellow" alt="alt text"> </a> <a href = "https://docs.scipy.org/doc/scipy/reference/sparse.linalg.html"> <img src="https://img.shields.io/badge/Pkg-sparse.linalg-yellow" alt="alt text"> </a>
+  - SciPy (sparse matrices, sparse linear algebra) <a href = "https://docs.scipy.org/doc/scipy/reference/sparse.html"> <img src="https://img.shields.io/badge/Pkg-sparse-yellow"> </a> <a href = "https://docs.scipy.org/doc/scipy/reference/sparse.linalg.html"> <img src="https://img.shields.io/badge/Pkg-sparse.linalg-yellow"> </a>
 
 
 ### Version notes
