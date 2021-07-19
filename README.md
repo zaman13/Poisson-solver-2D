@@ -50,6 +50,9 @@ The boundary values themselves can be functions of (x,y).
 
 
 ## Version notes
+- version 1.3
+  - It is now possible to apply Neumann and mixed boundary conditions
+
 - version 1.2
   - It is now possible to define arbitrary Dirichlet boundary points at the interior of the solution domain
   
