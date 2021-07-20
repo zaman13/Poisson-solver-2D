@@ -75,7 +75,7 @@ Solution of <img src="https://render.githubusercontent.com/render/math?math=\nab
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output_3.svg"  width = "400">
 
 #### Mixed boundary conditions (both Dirichlet and Neumann boundary conditions)
-Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with boundary conditions <img src="https://render.githubusercontent.com/render/math?math=\frac{du}{dx}(-6,y) = 0, \frac{du}{dx}(6,y) = 0, u(x,-3) = 0, \frac{du}{dy}(x,3) = 0, u(1<x<1.4,-0.5<y<0.2)=1.5">  is shown below:
+Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with boundary conditions <img src="https://render.githubusercontent.com/render/math?math=\frac{du}{dx}(-6,y) = 0, \frac{du}{dx}(6,y) = 0, u(x,-3) = 0, \frac{du}{dy}(x,3) = 0, u(1<x<1.4,-0.5<y<0.2)=1.5"> (Dirichlet boundary condition on the left wall and in the region 1<x<1.4, -0.5<y<0.2. Neumann boundary conditions on the right, top and bottom walls.) is shown below:
 
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output_4.svg"  width = "400">
  
