@@ -5,7 +5,7 @@
 <p float="left">
 <a href = "https://github.com/zaman13/Particle-Swarm-Optimization-Fortran-95/tree/master/Fortran%20codes"> <img src="https://img.shields.io/badge/Language-Python-blue" alt="alt text"> </a>
 <a href = "https://github.com/zaman13/Poisson-solver-2D/blob/master/LICENSE"> <img src="https://img.shields.io/github/license/zaman13/Poisson-solver-2D" alt="alt text"></a>
-<a href = "https://github.com/zaman13/Poisson-solver-2D/tree/master/Code"> <img src="https://img.shields.io/badge/version-1.2-red" alt="alt text"> </a>
+<a href = "https://github.com/zaman13/Poisson-solver-2D/tree/master/Code"> <img src="https://img.shields.io/badge/version-1.3-red" alt="alt text"> </a>
 </p>
 
 <p>
@@ -50,6 +50,9 @@ The boundary values themselves can be functions of (x,y).
 
 
 ## Version notes
+- version 1.3
+  - It is now possible to apply Neumann and mixed boundary conditions
+
 - version 1.2
   - It is now possible to define arbitrary Dirichlet boundary points at the interior of the solution domain
   
@@ -72,7 +75,7 @@ Solution of <img src="https://render.githubusercontent.com/render/math?math=\nab
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output_3.svg"  width = "400">
 
 #### Mixed boundary conditions (both Dirichlet and Neumann boundary conditions)
-Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with boundary conditions <img src="https://render.githubusercontent.com/render/math?math=\frac{du}{dx}(-6,y) = 0, \frac{du}{dx}(6,y) = 0, u(x,-3) = 0, \frac{du}{dy}(x,3) = 0, u(1<x<1.4,-0.5<y<0.2)=1.5">  is shown below:
+Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with boundary conditions <img src="https://render.githubusercontent.com/render/math?math=\frac{du}{dx}(-6,y) = 0, \frac{du}{dx}(6,y) = 0, u(x,-3) = 0, \frac{du}{dy}(x,3) = 0, u(1<x<1.4,-0.5<y<0.2)=1.5"> (Dirichlet boundary condition on the left wall and in the region 1<x<1.4, -0.5<y<0.2. Neumann boundary conditions on the right, top and bottom walls.) is shown below:
 
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output_4.svg"  width = "400">
  
