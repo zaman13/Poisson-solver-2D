@@ -9,7 +9,7 @@
 </p>
 
 <p>
-Finite difference solution of 2D Poisson equation <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = g(x,y)">
+Finite difference solution of 2D Poisson equation <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = f(x,y)">
 
 
 <p float="right">
