@@ -3,13 +3,13 @@
 
 
 <p float="left">
-<a href = "https://github.com/zaman13/Particle-Swarm-Optimization-Fortran-95/tree/master/Fortran%20codes"> <img src="https://img.shields.io/badge/Language-Python-blue" alt="alt text"> </a>
+<a href = "https://github.com/zaman13/Poisson-solver-2D/tree/master/Code"> <img src="https://img.shields.io/badge/Language-Python-blue" alt="alt text"> </a>
 <a href = "https://github.com/zaman13/Poisson-solver-2D/blob/master/LICENSE"> <img src="https://img.shields.io/github/license/zaman13/Poisson-solver-2D" alt="alt text"></a>
 <a href = "https://github.com/zaman13/Poisson-solver-2D/tree/master/Code"> <img src="https://img.shields.io/badge/version-1.3-red" alt="alt text"> </a>
 </p>
 
 <p>
-Finite difference solution of 2D Poisson equation <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = g(x,y)">
+Finite difference solution of 2D Poisson equation <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = f(x,y)">
 
 
 <p float="right">
