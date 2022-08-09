@@ -11,6 +11,9 @@
 <p>
 Finite difference solution of 2D Poisson equation <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = f(x,y)">
 
+Detials about the work can be found in the following tutorial paper: 
+
+Zaman, M.A. "Numerical Solution of the Poisson Equation Using Finite Difference Matrix Operators", Electronics 2022, 11, 2365. https://doi.org/10.3390/electronics11152365
 
 <p float="right">
   <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output_3.svg"  width = "440" />
@@ -81,5 +84,6 @@ Solution of <img src="https://render.githubusercontent.com/render/math?math=\nab
  
  
 ### References
+  - Zaman, M.A. "Numerical Solution of the Poisson Equation Using Finite Difference Matrix Operators", Electronics 2022, 11, 2365.     https://doi.org/10.3390/electronics11152365
   - Sparse matrices: https://docs.scipy.org/doc/scipy/reference/sparse.html
   - Sparse matrix linear algebra: https://docs.scipy.org/doc/scipy/reference/sparse.linalg.html
