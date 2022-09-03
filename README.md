@@ -86,15 +86,15 @@ Solution of <img src="https://render.githubusercontent.com/render/math?math=\nab
  #### Mixed boundary conditions 2 (both Dirichlet and Neumann boundary conditions)
 Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with the following boundary conditions:
 
-Center circular region <img src="https://render.githubusercontent.com/render/math?math=u(x,y) = 1">
+Center circular region: u = 1
 
-Left and right circular region <img src="https://render.githubusercontent.com/render/math?math=u(x,y) = -2">
+Left and right circular region: u = -2
 
-Left and right rectangular region <img src="https://render.githubusercontent.com/render/math?math=u(x,y) = 2">
+Left and right rectangular region: u = 2
 
-All the outer boundaries have Neumann boundary conditions <img src="https://render.githubusercontent.com/render/math?math=u(x,y) = 0">
+All the outer boundaries have Neumann boundary conditions: du/dx = 0 (left and right boundary), du/dy = 0 (top and bottom boundary)
 
-NeuThe results are shown below:
+The results are shown below:
 
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Fig_test_pot.png"  width = "400">
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Fig_test_field.png"  width = "400">
