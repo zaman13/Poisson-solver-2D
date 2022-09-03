@@ -83,6 +83,23 @@ Solution of <img src="https://render.githubusercontent.com/render/math?math=\nab
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output_4.svg"  width = "400">
  
  
+ #### Mixed boundary conditions 2 (both Dirichlet and Neumann boundary conditions)
+Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with the following boundary conditions:
+
+Center circular region <img src="https://render.githubusercontent.com/render/math?math=u(x,y) = 1">
+
+Left and right circular region <img src="https://render.githubusercontent.com/render/math?math=u(x,y) = -2">
+
+Left and right rectangular region <img src="https://render.githubusercontent.com/render/math?math=u(x,y) = 2">
+
+All the outer boundaries have Neumann boundary conditions <img src="https://render.githubusercontent.com/render/math?math=u(x,y) = 0">
+
+NeuThe results are shown below:
+
+ <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Fig_test_pot.png"  width = "400">
+ <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Fig_test_field.png"  width = "400">
+ 
+ 
 ### References
   - Zaman, M.A. "Numerical Solution of the Poisson Equation Using Finite Difference Matrix Operators", Electronics 2022, 11, 2365.     https://doi.org/10.3390/electronics11152365
   - Sparse matrices: https://docs.scipy.org/doc/scipy/reference/sparse.html
