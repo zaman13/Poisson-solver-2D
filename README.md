@@ -45,7 +45,7 @@ Current version can handle Dirichlet, Neumann, and mixed (combination of Dirichl
   
 </p>
 
-The boundary values themselves can be functions of (x,y).
+The boundary values themselves can be functions of (x,y). In addition to the boundaries being at the edge of the solution domain, boundary values imposed on interior regions (i.e. regions surrounded by points where the equation is to be solved) can be also be solved using this code. 
 
 ## Package requirements
   - NumPy 
@@ -66,6 +66,10 @@ The boundary values themselves can be functions of (x,y).
 - version 1.0 notes
   - Sparse matrix implementation. CSR format (Compressed sparse row matrix) matrix.
 
+
+## Graphically Defined Geometry
+In addition to algebraically defining the solution domain and the boundary regions, it is possible to import the geometry from bitmap image (bmp) file. Differere colors in the bmp file are taken as different regions (i.e. Dirichlet boundary 1, Direchlet boundary 2, solution domain, Neumann boundary etc.). The different regions can be handled appropriately by defining the color mapping in the code. This feature can be useful when working with complex geometries that are difficult/cumbersome to define algebraically. 
+
 ## Sample Output
 #### Dirichlet boundary conditions at outer walls
 Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with boundary conditions <img src="https://render.githubusercontent.com/render/math?math=u(-6,y) = 0.5, u(6,y) = 1.2, u(x,-3) = -0.75, u(x,3) = -1"> is shown below:
@@ -83,7 +87,7 @@ Solution of <img src="https://render.githubusercontent.com/render/math?math=\nab
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output_4.svg"  width = "400">
  
  
- #### Mixed boundary conditions 2 (both Dirichlet and Neumann boundary conditions)
+ #### Graphically defined geometry (both Dirichlet and Neumann boundary conditions)
 Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with the following boundary conditions:
 
 Center circular region: u = 1
