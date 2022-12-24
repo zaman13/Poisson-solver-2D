@@ -53,6 +53,19 @@ The boundary values themselves can be functions of (x,y). In addition to the bou
 
 
 ## Version notes
+
+- version 1.5.2
+    - Created geo_source_definition file. Geometry and source definition functions have been moved there
+    - Created utilities_definition file. Moved the plotting (and color) definition functions there  
+    
+- version 1.5
+    - Generalized the boundary definition process. A separate function file is used to find all the outer and inner boundary indices.
+      All boundary quantities are in list form. This makes it easier to implement all the boundary operations in one go (rather than
+      treating each boundary separately).
+      
+- version 1.4.4
+    - Fixed aliasing problem in contour plot export
+    
 - version 1.3
   - It is now possible to apply Neumann and mixed boundary conditions
 
