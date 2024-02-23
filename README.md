@@ -9,7 +9,7 @@
 </p>
 
 <p>
-Finite difference solution of 2D Poisson equation <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = f(x,y)">
+Finite difference solution of 2D Poisson equation $\nabla^2u(x,y) = f(x,y)$
 
 Detials about the work can be found in the following tutorial paper: 
 
@@ -24,23 +24,24 @@ Zaman, M.A. "Numerical Solution of the Poisson Equation Using Finite Difference 
   
 Current version can handle Dirichlet, Neumann, and mixed (combination of Dirichlet and Neumann) boundary conditions:
 
-<img src="https://render.githubusercontent.com/render/math?math=u(x=x_L,y) = u_L">  (Dirichlet left boundary value)
+$u(x=x_L,y) = u_L$ (Dirichlet left boundary value)
 
-<img src="https://render.githubusercontent.com/render/math?math=u(x=x_R,y) = u_R">  (Dirichlet right boundary value)
+$u(x=x_R,y) = u_R$ (Dirichlet left boundary value)
 
-<img src="https://render.githubusercontent.com/render/math?math=u(x,y=y_T) = u_T">  (Dirichlet top boundary value)
+$u(x,y=y_T) = u_T$ (Dirichlet left boundary value)
 
-<img src="https://render.githubusercontent.com/render/math?math=u(x,y=y_B) = u_B">  (Dirichlet bottom boundary value)
+$u(x,y=y_B) = u_B$ (Dirichlet left boundary value)
+
+$u(x_l < x < x_h, y_l < y < y_h) = u_b$  (Dirichlet interior boundary value) 
   
-<img src="https://render.githubusercontent.com/render/math?math=u(x_l<x<x_h,y_l<y<y_h) = u_b">  (Dirichlet interior boundary value) 
+$\frac{du}{dx}(x=x_L,y) = u_L$  (Neumann left boundary value)
 
-<img src="https://render.githubusercontent.com/render/math?math=\frac{du}{dx}(x=x_L,y) = u_L">  (Neumann left boundary value)
+$\frac{du}{dx}(x=x_R,y) = u_R$  (Neumann right boundary value)
 
-<img src="https://render.githubusercontent.com/render/math?math=\frac{du}{dx}(x=x_R,y) = u_R">  (Neumann right boundary value)
-  
-<img src="https://render.githubusercontent.com/render/math?math=\frac{du}{dy}(x,y=y_T) = u_T">  (Neumann left boundary value)
+$\frac{du}{dy}(x,y=y_T) = u_T$  (Neumann top boundary value)
 
-<img src="https://render.githubusercontent.com/render/math?math=\frac{du}{dy}(x,y=y_B) = u_B">  (Neumann right boundary value)
+$\frac{du}{dy}(x,y=y_B) = u_B$  (Neumann bottom boundary value)
+
   
   
 </p>
@@ -85,31 +86,31 @@ In addition to algebraically defining the solution domain and the boundary regio
 
 ## Sample Output
 #### Dirichlet boundary conditions at outer walls
-Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with boundary conditions <img src="https://render.githubusercontent.com/render/math?math=u(-6,y) = 0.5, u(6,y) = 1.2, u(x,-3) = -0.75, u(x,3) = -1"> is shown below:
+Solution of $\nabla^2u(x,y) = 0$ with boundary conditions $u(-6,y) = 0.5$, $u(6,y) = 1.2$, $u(x,-3) = -0.75$, $u(x,3) = -1$ is shown below:
 
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output.png"  width = "400">
 
 #### Dirichlet boundary conditions at outer wall and inner regions
-Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with boundary conditions <img src="https://render.githubusercontent.com/render/math?math=u(-6,y) = 0.5, u(6,y) = 1.2, u(x,-3) = -0.75, u(x,3) = -1, u(1<x<1.4,-0.5<y<0.2)=1.5">  is shown below:
+Solution of $\nabla^2u(x,y) = 0$ with boundary conditions $u(-6,y) = 0.5$, $u(6,y) = 1.2$, $u(x,-3) = -0.75$, $u(x,3) = -1$, $u(1 < x < 1.4, -0.5 < y < 0.2)=1.5$  is shown below:
 
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output_3.svg"  width = "400">
 
 #### Mixed boundary conditions (both Dirichlet and Neumann boundary conditions)
-Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with boundary conditions <img src="https://render.githubusercontent.com/render/math?math=\frac{du}{dx}(-6,y) = 0, \frac{du}{dx}(6,y) = 0, u(x,-3) = 0, \frac{du}{dy}(x,3) = 0, u(1<x<1.4,-0.5<y<0.2)=1.5"> (Dirichlet boundary condition on the left wall and in the region 1<x<1.4, -0.5<y<0.2. Neumann boundary conditions on the right, top and bottom walls.) is shown below:
+Solution of $\nabla^2u(x,y) = 0$ with boundary conditions $\frac{du}{dx}(-6,y) = 0$, $\frac{du}{dx}(6,y) = 0$, $u(x,-3) = 0$, $\frac{du}{dy}(x,3) = 0$, $u(1 < x < 1.4, -0.5 < y < 0.2)=1.5$ (Dirichlet boundary condition on the left wall and in the region $1 < x< 1.4$, $-0.5 < y < 0.2$. Neumann boundary conditions on the right, top and bottom walls.) is shown below:
 
  <img src="https://github.com/zaman13/Poisson-solver-2D/blob/master/Laplace_figure_output_4.svg"  width = "400">
  
  
  #### Graphically defined geometry (both Dirichlet and Neumann boundary conditions)
-Solution of <img src="https://render.githubusercontent.com/render/math?math=\nabla^2u(x,y) = 0"> with the following boundary conditions:
+Solution $\nabla^2u(x,y) = 0$ with the following boundary conditions:
 
-Center circular region: u = 1
+Center circular region: $u = 1$
 
-Left and right circular region: u = -2
+Left and right circular region: $u = -2$
 
-Left and right rectangular region: u = 2
+Left and right rectangular region: $u = 2$
 
-All the outer boundaries have Neumann boundary conditions: du/dx = 0 (left and right boundary), du/dy = 0 (top and bottom boundary)
+All the outer boundaries have Neumann boundary conditions: $du/dx = 0$ (left and right boundary), $du/dy = 0$ (top and bottom boundary)
 
 The results are shown below:
 
