@@ -52,6 +52,13 @@ The boundary values themselves can be functions of (x,y). In addition to the bou
   - NumPy 
   - SciPy (sparse matrices, sparse linear algebra) <a href = "https://docs.scipy.org/doc/scipy/reference/sparse.html"> <img src="https://img.shields.io/badge/Pkg-sparse-yellow"> </a> <a href = "https://docs.scipy.org/doc/scipy/reference/sparse.linalg.html"> <img src="https://img.shields.io/badge/Pkg-sparse.linalg-yellow"> </a>
 
+## Instructions for running the code
+- Browse the Code folder and download all files in the latest version sub-folder
+- Make sure all the files are in the same folder
+- Run the Poisson_2D_v#_#_#.py file to test that the code is working
+- Make edits on the files to define the necessary geometry and boundary conditions for the specific problem and rerun the code
+
+No additional installations are needed.
 
 ## Version notes
 
